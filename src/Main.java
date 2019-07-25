@@ -84,20 +84,20 @@ public class Main extends JPanel{
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Game");
-        Main game = new Main(); // é¢æ¿å¯¹è±¡
-        frame.add(game); // å°†é¢æ¿æ·»åŠ åˆ°JFrameä¸­
-        frame.setSize(WIDTH, HEIGHT); // è®¾ç½®å¤§å°
-        frame.setAlwaysOnTop(true); // è®¾ç½®å…¶æ€»åœ¨æœ€ä¸Š
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // é»˜è®¤å…³é—­æ“ä½œ
-        // frame.setIconImage(new ImageIcon("images/icon.jpg").getImage()); // è®¾ç½®çª—ä½“çš„å›¾æ ‡
-        frame.setLocationRelativeTo(null); // è®¾ç½®çª—ä½“åˆå§‹ä½ç½®
-        frame.setVisible(true); // å°½å¿«è°ƒç”¨paint
+        Main game = new Main(); // Ãæ°å¶ÔÏó
+        frame.add(game); // ½«Ãæ°åÌí¼Óµ½JFrameÖĞ
+        frame.setSize(WIDTH, HEIGHT); // ÉèÖÃ´óĞ¡
+        frame.setAlwaysOnTop(true); // ÉèÖÃÆä×ÜÔÚ×îÉÏ
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Ä¬ÈÏ¹Ø±Õ²Ù×÷
+        // frame.setIconImage(new ImageIcon("images/icon.jpg").getImage()); // ÉèÖÃ´°ÌåµÄÍ¼±ê
+        frame.setLocationRelativeTo(null); // ÉèÖÃ´°Ìå³õÊ¼Î»ÖÃ
+        frame.setVisible(true); // ¾¡¿ìµ÷ÓÃpaint
         game.enemyCount=0;
         game.score=0;
         game.translateX=-MAPWIDTH/2+WIDTH/2;
         game.translateY=-MAPHEIGHT/2+HEIGHT/2;
 
-        game.action(); // å¯åŠ¨æ‰§è¡Œ
+        game.action(); // Æô¶¯Ö´ĞĞ
     }
     public void action() {
 
@@ -106,29 +106,29 @@ public class Main extends JPanel{
         music.start();
         MouseAdapter l = new MouseAdapter() {
             @Override
-            public void mouseMoved(MouseEvent e) { // é¼ æ ‡ç§»åŠ¨
-                if (state == RUNNING) { // è¿è¡ŒçŠ¶æ€ä¸‹ç§»åŠ¨è‹±é›„æœº--éšé¼ æ ‡ä½ç½®
+            public void mouseMoved(MouseEvent e) { // Êó±êÒÆ¶¯
+                if (state == RUNNING) { // ÔËĞĞ×´Ì¬ÏÂÒÆ¶¯Ó¢ĞÛ»ú--ËæÊó±êÎ»ÖÃ
                     MouseX=e.getX()-translateX;
                     MouseY=e.getY()-translateY;
                 }
             }
 
             @Override
-            public void mouseEntered(MouseEvent e) { // é¼ æ ‡è¿›å…¥
-                if (state == PAUSE) { // æš‚åœçŠ¶æ€ä¸‹è¿è¡Œ
+            public void mouseEntered(MouseEvent e) { // Êó±ê½øÈë
+                if (state == PAUSE) { // ÔİÍ£×´Ì¬ÏÂÔËĞĞ
                     state = RUNNING;
                 }
             }
 
             @Override
-            public void mouseExited(MouseEvent e) { // é¼ æ ‡é€€å‡º
-                if (state == RUNNING) { // æ¸¸æˆæœªç»“æŸï¼Œåˆ™è®¾ç½®å…¶ä¸ºæš‚åœ
+            public void mouseExited(MouseEvent e) { // Êó±êÍË³ö
+                if (state == RUNNING) { // ÓÎÏ·Î´½áÊø£¬ÔòÉèÖÃÆäÎªÔİÍ£
                     state = PAUSE;
                 }
             }
 
             @Override
-            public void mouseReleased(MouseEvent e) { // é¼ æ ‡ç‚¹å‡»
+            public void mouseReleased(MouseEvent e) { // Êó±êµã»÷
                 if(e.getButton() == e.BUTTON1){
                     if (hero.cd<=0){
                         for (Enemy h:enemies){
@@ -150,8 +150,8 @@ public class Main extends JPanel{
 
             }
         };
-        this.addMouseListener(l); // å¤„ç†é¼ æ ‡ç‚¹å‡»æ“ä½œ
-        this.addMouseMotionListener(l); // å¤„ç†é¼ æ ‡æ»‘åŠ¨æ“ä½œ
+        this.addMouseListener(l); // ´¦ÀíÊó±êµã»÷²Ù×÷
+        this.addMouseMotionListener(l); // ´¦ÀíÊó±ê»¬¶¯²Ù×÷
         this.requestFocus();
         KeyAdapter keyAdapter=new KeyAdapter() {
             @Override
@@ -263,7 +263,7 @@ public class Main extends JPanel{
                 if (score>bestRecord)
                 {
                     g.setFont(new Font("TimesRoman",Font.PLAIN,80));
-                    g.drawString("æ–°è®°å½•ä»€ä¹ˆçš„ï¼Œä¾¥å¹¸ç½¢äº†",200-translateX,100-translateY);
+                    g.drawString("ĞÂ¼ÇÂ¼Ê²Ã´µÄ£¬½ÄĞÒ°ÕÁË",200-translateX,100-translateY);
                     try {
                         out=new FileWriter("record.txt");
                         out.write(score);
@@ -450,10 +450,10 @@ public class Main extends JPanel{
 
         g.setColor(new Color(0,0,0));
         g.setFont(new Font("TimesRoman",Font.PLAIN,20));
-        g.drawString("ç”Ÿå‘½å€¼:"+hero.hp+"/"+Hero.fullHp,20-translateX,640-translateY);
-        g.drawString("æ”»é€Ÿ:"+1.0,20-translateX,670-translateY);
-        g.drawString("æ”»å‡»åŠ›:"+heroArrow.getPower(),20-translateX,700-translateY);
-        g.drawString("ç§»é€Ÿ:"+hero.getSpeed(),20-translateX,730-translateY);
+        g.drawString("ÉúÃüÖµ:"+hero.hp+"/"+Hero.fullHp,20-translateX,640-translateY);
+        g.drawString("¹¥ËÙ:"+1.0,20-translateX,670-translateY);
+        g.drawString("¹¥»÷Á¦:"+heroArrow.getPower(),20-translateX,700-translateY);
+        g.drawString("ÒÆËÙ:"+hero.getSpeed(),20-translateX,730-translateY);
         g.setFont(new Font("TimesRoman",Font.PLAIN,40));
         g.drawString("Q",220-translateX,710-translateY);
         g.drawString("W",320-translateX,710-translateY);
@@ -461,13 +461,13 @@ public class Main extends JPanel{
         g.drawString("R",520-translateX,710-translateY);
         g.setFont(new Font("TimesRoman",Font.PLAIN,20));
         g.drawString("cd:"+(int)(hero.qcd/100),220-translateX,750-translateY);
-        g.drawString("ä¼¤å®³:"+HeroQ.getPower(),210-translateX,725-translateY);
+        g.drawString("ÉËº¦:"+HeroQ.getPower(),210-translateX,725-translateY);
         g.drawString("cd:"+(int)(hero.wcd/100),320-translateX,750-translateY);
-        g.drawString("æŠ¤ç›¾:"+heroW.getPower(),305-translateX,725-translateY);
+        g.drawString("»¤¶Ü:"+heroW.getPower(),305-translateX,725-translateY);
         g.drawString("cd:"+(int)(hero.ecd/100),420-translateX,750-translateY);
-        g.drawString("å’¸é±¼çªè¿›",405-translateX,725-translateY);
+        g.drawString("ÏÌÓãÍ»½ø",405-translateX,725-translateY);
         g.drawString("cd:"+(int)(hero.rcd/100),520-translateX,750-translateY);
-        g.drawString("ç¦é”¢",505-translateX,725-translateY);
+        g.drawString("½ûïÀ",505-translateX,725-translateY);
 
 
     }

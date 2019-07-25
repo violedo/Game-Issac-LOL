@@ -6,6 +6,7 @@ public class Music extends Thread {
     Player player;
     File music;
     public Music() {
+        String path = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
         music=new File("music.mp3");
     }
     @Override

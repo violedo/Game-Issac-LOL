@@ -7,39 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc7d5283-958a-4b68-9215-081bd577fff0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/game_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jl1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jlme0_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/580b585b2edbce24c47b2657.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/game.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heroE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heroR.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/20181105045632_e6098b05d774fc55e50401a2890b5155_9.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/Enemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/EnemyA.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/EnemyA.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/Hero.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/Hero.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/HeroQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/HeroQ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/HeroR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/HeroR.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/HeroW.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/HeroW.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/Main$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/heroArrow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/game/heroArrow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/game/timg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/20181105045632_e6098b05d774fc55e50401a2890b5155_9.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnemyA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnemyA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroQ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroR.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HeroW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HeroW.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroArrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroArrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/music.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/music.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/build(click run.bat to run)/music.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/project1/build(click run.bat to run)/music.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1/src/music.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/project1/src/music.mp3" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,30 +39,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4550">
-              <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
+            <state relative-caret-position="148">
+              <caret line="457" column="56" selection-start-line="457" selection-start-column="56" selection-end-line="457" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#3779:5460" />
-                <element signature="class#5623:7453" />
-                <element signature="e#7665#7956#1" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Music.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="190">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Hero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
+            <state relative-caret-position="323">
               <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -204,14 +171,15 @@
         <option value="$PROJECT_DIR$/MusicPlayer.java" />
         <option value="$PROJECT_DIR$/src/MusicPlayer.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Music.java" />
         <option value="$PROJECT_DIR$/src/Hero.java" />
+        <option value="$PROJECT_DIR$/src/Music.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-32" />
-    <option name="width" value="1354" />
+    <option name="x" value="455" />
+    <option name="y" value="15" />
+    <option name="width" value="1355" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -220,8 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,6 +220,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -321,18 +290,18 @@
       <workItem from="1563850839868" duration="1368000" />
       <workItem from="1563861418492" duration="20000" />
       <workItem from="1563863511340" duration="10000" />
-      <workItem from="1564016471820" duration="2595000" />
+      <workItem from="1564016471820" duration="7325000" />
+      <workItem from="1564028188961" duration="700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81969000" />
+    <option name="totallyTimeSpent" value="87399000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14745308" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1494638" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -341,7 +310,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29745042" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29745042" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398017" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,7 +320,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -476,6 +445,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Music.java" />
+    <entry file="file://$PROJECT_DIR$/MusicPlayer.java" />
+    <entry file="file://$PROJECT_DIR$/src/MusicPlayer.java" />
+    <entry file="file://$PROJECT_DIR$/src/Music.class" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="457" column="56" selection-start-line="457" selection-start-column="56" selection-end-line="457" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Hero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setTowardPos#0;class#Hero#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/heroArrow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -526,76 +520,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Music.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MusicPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MusicPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#714#746#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Music.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="5" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Music.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="190">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Hero.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setTowardPos#0;class#Hero#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4550">
-          <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#3779:5460" />
-            <element signature="class#5623:7453" />
-            <element signature="e#7665#7956#1" />
           </folding>
         </state>
       </provider>
