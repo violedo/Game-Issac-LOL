@@ -3,12 +3,12 @@ import java.awt.image.BufferedImage;
 import java.math.*;
 
 public class HeroW {
-    private static int power=300;
+    public static int power=100;
     public int dyingTime;
     private BufferedImage image;
     private int width;
     private int height;
-    public final static int fullcd=500;
+    public final static int fullcd=800;
     public final static int fullDyingTime=300;
     public boolean on;
 

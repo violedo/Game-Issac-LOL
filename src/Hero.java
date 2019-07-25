@@ -25,8 +25,9 @@ public class Hero extends Obj{
 
     public boolean Eon;
     public int ecd;
-    public static int fullEcd=500;
+    public static int fullEcd=800;
     public final static int Erange=600;
+    public static int ePower=30;
 
     public int rcd;
 

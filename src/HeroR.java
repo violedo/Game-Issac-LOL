@@ -16,8 +16,8 @@ public class HeroR extends  Obj{
     public int dyingTime3;
     public int state;
 
-    private static int power =0;
-    public final static int fullcd=300;
+    public static int power =30;
+    public final static int fullcd=2000;
 
     public HeroR(){
         image=Main.heror;

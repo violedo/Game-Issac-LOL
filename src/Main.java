@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Timer;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.io.*;
 
 public class Main extends JPanel{
     public static final int WIDTH = 1200;
@@ -25,6 +26,9 @@ public class Main extends JPanel{
     private int MouseY;
     private int enemyCount;
     public byte score;
+    public int level=1;
+    public int newEnemyTime=200;
+    public static int bestRecord;
 
     public static BufferedImage hero_image0;
     public static BufferedImage hero_image1;
@@ -38,7 +42,8 @@ public class Main extends JPanel{
     public static BufferedImage hero_W;
     public static BufferedImage heroE;
     public static BufferedImage heror;
-
+    public static FileReader in=null;
+    public static FileWriter out=null;
 
     private Hero hero=new Hero();
     Set<heroArrow> heroarrows = new HashSet<>();
@@ -48,6 +53,7 @@ public class Main extends JPanel{
 
     Set<Enemy> enemies=new HashSet<>();
     Set<EnemyA> enemyAs=new HashSet<>();
+    Music music;
 
     static {
         try {
@@ -66,10 +72,14 @@ public class Main extends JPanel{
             heroE=ImageIO.read(Main.class.getResource("heroE.png"));
             heror=ImageIO.read(Main.class.getResource("heroR.png"));
 
+            in=new FileReader("record.txt");
+            bestRecord=in.read();
+            in.close();
         }
         catch (Exception e){
             e.printStackTrace();
         }
+
     }
 
     public static void main(String[] args) {
@@ -86,9 +96,14 @@ public class Main extends JPanel{
         game.score=0;
         game.translateX=-MAPWIDTH/2+WIDTH/2;
         game.translateY=-MAPHEIGHT/2+HEIGHT/2;
+
         game.action(); // 启动执行
     }
     public void action() {
+
+
+        music=new Music();
+        music.start();
         MouseAdapter l = new MouseAdapter() {
             @Override
             public void mouseMoved(MouseEvent e) { // 鼠标移动
@@ -245,7 +260,19 @@ public class Main extends JPanel{
             case GAME_OVER:
                 g.translate(translateX,translateY);
                 g.drawImage(background, 0, 0, null);
-                g.drawImage(cai,200-translateX,20-translateY,null);
+                if (score>bestRecord)
+                {
+                    g.setFont(new Font("TimesRoman",Font.PLAIN,80));
+                    g.drawString("新记录什么的，侥幸罢了",200-translateX,100-translateY);
+                    try {
+                        out=new FileWriter("record.txt");
+                        out.write(score);
+                        out.close();
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+                }
+                else g.drawImage(cai,400-translateX,20-translateY,null);
                 g.translate(-translateX,-translateY);
         }
 
@@ -288,10 +315,11 @@ public class Main extends JPanel{
 
 
     public void produceEnemiesAction(){
-        if (enemyCount++%200==0)
+        if (enemyCount++%newEnemyTime==0)
         {
             Enemy enemy=new Enemy();
             enemies.add(enemy);
+            enemyCount=1;
         }
     }
 
@@ -407,36 +435,39 @@ public class Main extends JPanel{
     }
     private void paintScore(Graphics g){
         g.setFont(new Font("TimesRoman",Font.PLAIN,50));
-        g.drawString("score: "+score,550-translateX,50-translateY);
+        g.drawString("score: "+score,950-translateX,50-translateY);
+        g.drawString("level:"+level,950-translateX,100-translateY);
+
+        g.drawString("Record:"+bestRecord,450-translateX,100-translateY);
     }
     private void paintHeroBoard(Graphics g){
         g.setColor(new Color(255,255,255));
-        g.fillRect(0-translateX,489-translateY,190,200);
-        g.fillRect(200-translateX,579-translateY,80,80);
-        g.fillRect(300-translateX,579-translateY,80,80);
-        g.fillRect(400-translateX,579-translateY,80,80);
-        g.fillRect(500-translateX,579-translateY,80,80);
+        g.fillRect(0-translateX,600-translateY,190,200);
+        g.fillRect(200-translateX,680-translateY,80,80);
+        g.fillRect(300-translateX,680-translateY,80,80);
+        g.fillRect(400-translateX,680-translateY,80,80);
+        g.fillRect(500-translateX,680-translateY,80,80);
 
         g.setColor(new Color(0,0,0));
         g.setFont(new Font("TimesRoman",Font.PLAIN,20));
-        g.drawString("生命值:"+hero.hp+"/"+Hero.fullHp,20-translateX,520-translateY);
-        g.drawString("攻速:"+1.0,20-translateX,550-translateY);
-        g.drawString("攻击力:"+heroArrow.getPower(),20-translateX,580-translateY);
-        g.drawString("移速:"+hero.getSpeed(),20-translateX,610-translateY);
+        g.drawString("生命值:"+hero.hp+"/"+Hero.fullHp,20-translateX,640-translateY);
+        g.drawString("攻速:"+1.0,20-translateX,670-translateY);
+        g.drawString("攻击力:"+heroArrow.getPower(),20-translateX,700-translateY);
+        g.drawString("移速:"+hero.getSpeed(),20-translateX,730-translateY);
         g.setFont(new Font("TimesRoman",Font.PLAIN,40));
-        g.drawString("Q",220-translateX,610-translateY);
-        g.drawString("W",320-translateX,610-translateY);
-        g.drawString("E",420-translateX,610-translateY);
-        g.drawString("R",520-translateX,610-translateY);
+        g.drawString("Q",220-translateX,710-translateY);
+        g.drawString("W",320-translateX,710-translateY);
+        g.drawString("E",420-translateX,710-translateY);
+        g.drawString("R",520-translateX,710-translateY);
         g.setFont(new Font("TimesRoman",Font.PLAIN,20));
-        g.drawString("cd:"+(int)(hero.qcd/100),220-translateX,650-translateY);
-        g.drawString("伤害:"+HeroQ.getPower(),210-translateX,625-translateY);
-        g.drawString("cd:"+(int)(hero.wcd/100),320-translateX,650-translateY);
-        g.drawString("护盾:"+heroW.getPower(),305-translateX,625-translateY);
-        g.drawString("cd:"+(int)(hero.ecd/100),420-translateX,650-translateY);
-        g.drawString("咸鱼突进",405-translateX,625-translateY);
-        g.drawString("cd:"+(int)(hero.rcd/100),520-translateX,650-translateY);
-        g.drawString("禁锢",505-translateX,625-translateY);
+        g.drawString("cd:"+(int)(hero.qcd/100),220-translateX,750-translateY);
+        g.drawString("伤害:"+HeroQ.getPower(),210-translateX,725-translateY);
+        g.drawString("cd:"+(int)(hero.wcd/100),320-translateX,750-translateY);
+        g.drawString("护盾:"+heroW.getPower(),305-translateX,725-translateY);
+        g.drawString("cd:"+(int)(hero.ecd/100),420-translateX,750-translateY);
+        g.drawString("咸鱼突进",405-translateX,725-translateY);
+        g.drawString("cd:"+(int)(hero.rcd/100),520-translateX,750-translateY);
+        g.drawString("禁锢",505-translateX,725-translateY);
 
 
     }
@@ -490,6 +521,8 @@ public class Main extends JPanel{
             {
                 removeEnemies.add(e);
                 ++score;
+                if (score==Math.sqrt(level*level*level)*5)
+                    levelUp();
             }
         }
         enemies.removeAll(removeEnemies);
@@ -529,8 +562,14 @@ public class Main extends JPanel{
             for (Enemy e:enemies){
                 if (collide(e,hero))
                 {
+                    e.hp-=hero.ePower;
+                }
+                if (e.hp<=0)
+                {
                     ++score;
                     removeEnemies.add(e);
+                    if (score%10==0)
+                        levelUp();
                 }
             }
         }
@@ -598,6 +637,19 @@ public class Main extends JPanel{
                 &&(a.getY()+a.getHeight()/2>b.getY()-b.getHeight()/2&&a.getY()-a.getHeight()/2<b.getY()+b.getHeight()/2))
             return true;
         else return false;
+    }
+    private void levelUp(){
+        hero.fullHp+=100;
+        hero.hp+=100;
+        heroArrow.power+=8;
+        HeroQ.power+=15;
+        Hero.ePower+=8;
+        HeroW.power+=30;
+        HeroR.power+=20;
+        newEnemyTime*=0.9;
+        Enemy.fullHp+=16;
+        EnemyA.power+=6;
+        ++level;
     }
 
 }

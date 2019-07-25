@@ -11,7 +11,7 @@ public class heroArrow extends Obj{
     private int speed;
     private boolean moving;
     private double curDir;
-    static private int power=15;
+    public static int power=15;
     private Enemy target;
 
     public heroArrow(int x,int y,Enemy target){

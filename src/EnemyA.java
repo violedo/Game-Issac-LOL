@@ -15,7 +15,7 @@ public class EnemyA extends Obj{
     private int image_count;
     private int action_count;
     private double curDir;
-    private int power;
+    public static int power=10;
 
     public EnemyA(int x,int y,int towardX,int towardY){
         this.x=x;
@@ -30,7 +30,6 @@ public class EnemyA extends Obj{
         image=Main.enemyA;
         width=image.getWidth();
         height=image.getHeight();
-        power=10;
     }
     public  double getCurDir(){return curDir;}
     public int getX() {

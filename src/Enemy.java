@@ -7,7 +7,6 @@ public class Enemy extends Obj{
     private int width;
     private int height;
     private BufferedImage image;
-    private BufferedImage[] images;
     private int speed;
     private double towardX;
     private double towardY;
@@ -17,7 +16,8 @@ public class Enemy extends Obj{
     private double curDir;
     public boolean imprisoned;
     private int imprisonedTime;
-    public int hp;
+    public static int fullHp=30;
+    public int hp=30;
     public int cd;
     public Enemy(){
         image=Main.enemy0;
@@ -29,7 +29,7 @@ public class Enemy extends Obj{
             case 2:x=(Main.WIDTH-width)*Math.random()-Main.translateX;y=-Main.translateY;break;
             case 3:x=(Main.WIDTH-width)*Math.random()-Main.translateX;y=Main.HEIGHT-Main.translateY;break;
         }
-        hp=30;
+        hp=fullHp;
         speed=1;
         image_count=0;
         action_count=2;

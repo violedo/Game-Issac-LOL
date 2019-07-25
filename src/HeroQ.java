@@ -11,18 +11,15 @@ public class HeroQ extends  Obj{
     private int width;
     private int height;
     private BufferedImage image;
-    private BufferedImage[] images;
     private int speed;
     private double towardX;
     private double towardY;
     private boolean moving;
-    private int image_count;
-    private int action_count;
     private int range;
     private double curDir;
     public int dyingTime;
-    private static int power =30;
-    public final static int fullcd=300;
+    public static int power =30;
+    public final static int fullcd=500;
 
     public HeroQ(int x,int y,int towardX,int towardY){
         this.x=x;
